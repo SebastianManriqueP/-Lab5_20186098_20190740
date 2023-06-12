@@ -1,0 +1,63 @@
+package com.example.lab5_aiot.Model;
+
+import java.io.Serializable;
+
+public class Result implements Serializable {
+
+    private Name name;
+    private Location location;
+    private String email;
+    private  String phone;
+
+    private Dob dob; //para la edad del doctor
+    private Picture picture;
+
+
+    public Name getName() {
+        return name;
+    }
+
+    public void setName(Name name) {
+        this.name = name;
+    }
+
+    public Location getLocation() {
+        return location;
+    }
+
+    public void setLocation(Location location) {
+        this.location = location;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public Dob getDob() {
+        return dob;
+    }
+
+    public void setDob(Dob dob) {
+        this.dob = dob;
+    }
+
+    public Picture getPicture() {
+        return picture;
+    }
+
+    public void setPicture(Picture picture) {
+        this.picture = picture;
+    }
+}

@@ -4,14 +4,12 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.widget.Toast;
 
 import com.example.lab5_aiot.databinding.ActivityRegistroBinding;
-import com.example.lab5_aiot.entitites.Usuario;
+import com.example.lab5_aiot.Model.Usuario;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 public class RegistroActivity extends AppCompatActivity {
 

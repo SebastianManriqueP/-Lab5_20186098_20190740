@@ -1,4 +1,4 @@
-package com.example.lab5_aiot.entitites;
+package com.example.lab5_aiot.Model;
 
 public class Usuario {
     private String nombre;
