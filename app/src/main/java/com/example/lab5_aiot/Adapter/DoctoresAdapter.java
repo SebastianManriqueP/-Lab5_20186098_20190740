@@ -14,11 +14,15 @@ import com.example.lab5_aiot.Model.DoctorDB;
 import com.example.lab5_aiot.R;
 import com.squareup.picasso.Picasso;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class DoctoresAdapter extends RecyclerView.Adapter<DoctoresAdapter.DoctorViewHolder> {
     private List<DoctorDB> listaDoctores;
     private Context context;
+
+    private List<DoctorDB> listaDoctores2;
 
     public List<DoctorDB> getListaDoctores() {
         return listaDoctores;
@@ -34,6 +38,15 @@ public class DoctoresAdapter extends RecyclerView.Adapter<DoctoresAdapter.Doctor
 
     public void setContext(Context context) {
         this.context = context;
+    }
+
+    public DoctoresAdapter() {
+    }
+
+    public DoctoresAdapter(List<DoctorDB> listaDoctores) {
+        this.listaDoctores = listaDoctores;
+        this.listaDoctores2 = new ArrayList<>();
+        listaDoctores2.addAll(listaDoctores);
     }
 
     @NonNull
@@ -62,6 +75,30 @@ public class DoctoresAdapter extends RecyclerView.Adapter<DoctoresAdapter.Doctor
         TextView textViewLocation = holder.itemView.findViewById(R.id.textUbicacion);
         textViewLocation.setText(doc.getCountry()+" - "+doc.getState()+" - "+doc.getCity());
     }
+
+    public void filtrado(final String txtBuscar) {
+        int longitud = txtBuscar.length();
+        if (longitud == 0) {
+            listaDoctores.clear();
+            listaDoctores.addAll(listaDoctores2);
+        } else {
+            if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.N) {
+                List<DoctorDB> collecion = listaDoctores.stream()
+                        .filter(i -> i.getFirst().toLowerCase().contains(txtBuscar.toLowerCase()))
+                        .collect(Collectors.toList());
+                listaDoctores.clear();
+                listaDoctores.addAll(collecion);
+            } else {
+                for (DoctorDB c : listaDoctores2) {
+                    if (c.getFirst().toLowerCase().contains(txtBuscar.toLowerCase())) {
+                        listaDoctores.add(c);
+                    }
+                }
+            }
+        }
+        notifyDataSetChanged();
+    }
+
 
     @Override
     public int getItemCount() {

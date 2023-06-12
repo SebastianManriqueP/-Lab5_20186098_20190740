@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import com.example.lab5_aiot.Adapter.DoctoresAdapter;
@@ -28,11 +29,12 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
-public class DoctoresActivity extends AppCompatActivity {
+public class DoctoresActivity extends AppCompatActivity implements SearchView.OnQueryTextListener {
 
     ActivityDoctoresBinding binding;
 
     DatabaseReference db;
+    DoctoresAdapter doctoresAdapter;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +42,10 @@ public class DoctoresActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         db = FirebaseDatabase.getInstance().getReference();
+
+        //Buscador
+        SearchView buscador = binding.searchView;
+        buscador.setOnQueryTextListener(this);
 
         //Recycler View
         //recibir la lista de doctores
@@ -52,9 +58,8 @@ public class DoctoresActivity extends AppCompatActivity {
                     listaDoctores.add(doctorDB);
                 }
                 //enviar al adapter
-                DoctoresAdapter doctoresAdapter = new DoctoresAdapter();
+                doctoresAdapter = new DoctoresAdapter(listaDoctores);
                 doctoresAdapter.setContext(DoctoresActivity.this);
-                doctoresAdapter.setListaDoctores(listaDoctores);
 
                 binding.recyclerView.setAdapter(doctoresAdapter);
                 binding.recyclerView.setLayoutManager(new LinearLayoutManager(DoctoresActivity.this));
@@ -111,9 +116,8 @@ public class DoctoresActivity extends AppCompatActivity {
                     listaDoctores.add(doctorDB);
                 }
                 //enviar al adapter
-                DoctoresAdapter doctoresAdapter = new DoctoresAdapter();
+                doctoresAdapter = new DoctoresAdapter(listaDoctores);
                 doctoresAdapter.setContext(DoctoresActivity.this);
-                doctoresAdapter.setListaDoctores(listaDoctores);
 
                 binding.recyclerView.setAdapter(doctoresAdapter);
                 binding.recyclerView.setLayoutManager(new LinearLayoutManager(DoctoresActivity.this));
@@ -134,5 +138,16 @@ public class DoctoresActivity extends AppCompatActivity {
 
     private void crearToast(String mensaje){
         Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
+    }
+
+    @Override
+    public boolean onQueryTextSubmit(String s) {
+        return false;
+    }
+
+    @Override
+    public boolean onQueryTextChange(String s) {
+        doctoresAdapter.filtrado(s);
+        return false;
     }
 }
