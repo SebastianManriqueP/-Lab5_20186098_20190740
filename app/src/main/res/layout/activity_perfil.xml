@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".perfil">
+    <TextView
+        android:id="@+id/titlePerfilDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:text="Perfil "
+        android:textColor="#198eb6"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/regresar"
+        android:layout_width="19dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="40dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_back_ios_24"
+        app:layout_constraintBottom_toBottomOf="@id/titlePerfilDoctor"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/titlePerfilDoctor" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="94dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="88dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/perfil" />
+
+    <TextView
+        android:id="@+id/nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="196dp"
+        android:gravity="center_horizontal"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Rodrigo Adauto" />
+
+    <TextView
+        android:id="@+id/historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="256dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Historial" />
+    <ImageView
+        android:id="@+id/regresar2"
+        android:layout_width="19dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="300dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@id/historial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/historial" />
+
+    <TextView
+        android:id="@+id/detalles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="312dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Detalles personales" />
+    <ImageView
+        android:id="@+id/regresar3"
+        android:layout_width="19dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="300dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@id/detalles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/detalles" />
+
+    <TextView
+        android:id="@+id/centros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="364dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Centros Clínicos" />
+    <ImageView
+        android:id="@+id/regresar4"
+        android:layout_width="19dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="300dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@id/centros"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/centros" />
+
+    <TextView
+        android:id="@+id/metodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="412dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Método de Pago" />
+    <ImageView
+        android:id="@+id/regresar5"
+        android:layout_width="19dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="300dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@id/metodo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/metodo" />
+    <TextView
+        android:id="@+id/configuracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="464dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Configuración" />
+    <ImageView
+        android:id="@+id/regresar6"
+        android:layout_width="19dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="300dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@id/configuracion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/configuracion" />
+    <TextView
+        android:id="@+id/ayuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="510dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Ayuda" />
+    <ImageView
+        android:id="@+id/regresar7"
+        android:layout_width="19dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="300dp"
+        android:clickable="true"
+        android:src="@drawable/baseline_arrow_forward_ios_24"
+        app:layout_constraintBottom_toBottomOf="@id/ayuda"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/ayuda" />
+    <TextView
+        android:id="@+id/cerrarsesion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="555dp"
+        android:letterSpacing="-0.02"
+        android:lineSpacingExtra="0sp"
+        android:textColor="#000000"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Cerrar sesión" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

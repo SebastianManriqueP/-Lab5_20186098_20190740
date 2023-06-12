@@ -15,6 +15,15 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".perfil"
+            android:exported="false" />
+        <activity
+            android:name=".ver_mas_doctores"
+            android:exported="false" />
+        <activity
+            android:name=".Perfil_doctor"
+            android:exported="false" />
+        <activity
             android:name=".DoctoresActivity"
             android:exported="false" />
         <activity

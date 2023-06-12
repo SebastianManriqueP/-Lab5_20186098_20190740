@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil_doctor">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/titlePerfilDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="29dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Perfil Doctor"
+                    android:textColor="#198eb6"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/regresar"
+                    android:layout_width="19dp"
+                    android:layout_height="27dp"
+                    android:layout_marginStart="40dp"
+                    android:clickable="true"
+                    android:src="@drawable/baseline_arrow_back_ios_24"
+                    app:layout_constraintBottom_toBottomOf="@id/titlePerfilDoctor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/titlePerfilDoctor" />
+
+                <ImageView
+                    android:id="@+id/fotoDoctor"
+                    android:layout_width="138dp"
+                    android:layout_height="138dp"
+                    android:layout_marginTop="50dp"
+                    app:layout_constraintStart_toStartOf="@id/regresar"
+                    app:layout_constraintTop_toBottomOf="@id/titlePerfilDoctor"
+                    tools:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/nombreDoctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toEndOf="@id/fotoDoctor"
+                    app:layout_constraintTop_toTopOf="@id/fotoDoctor"
+                    tools:text="Dr. Monsieur Juarez" />
+
+                <TextView
+                    android:id="@+id/genero"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toEndOf="@id/fotoDoctor"
+                    app:layout_constraintTop_toBottomOf="@id/nombreDoctor"
+                    tools:text="Hombre" />
+
+                <TextView
+                    android:id="@+id/correo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="10dp"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:textColor="#000000"
+                    android:textSize="10sp"
+                    app:layout_constraintStart_toEndOf="@id/fotoDoctor"
+                    app:layout_constraintTop_toBottomOf="@id/genero"
+                    tools:text="mailto:etienne.nguyen@example.com" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="@id/fotoDoctor"
+                    app:layout_constraintStart_toStartOf="@id/fotoDoctor"
+                    app:layout_constraintTop_toBottomOf="@id/fotoDoctor"
+                    tools:text="angryfish444" />
+
+                <TextView
+                    android:id="@+id/costolabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="28dp"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Costo"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toEndOf="@id/fotoDoctor"
+                    app:layout_constraintTop_toBottomOf="@id/correo" />
+
+                <TextView
+                    android:id="@+id/costo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="20.1dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#000000"
+                    android:textSize="17sp"
+                    android:textStyle="normal"
+                    app:layout_constraintBottom_toBottomOf="@id/costolabel"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/costolabel"
+                    tools:text="S/ 165.00" />
+
+                <TextView
+                    android:id="@+id/labelUbicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="47dp"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Ubicación"
+                    android:textColor="#198eb6"
+                    android:textSize="22sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/username" />
+
+                <TextView
+                    android:id="@+id/labelEdad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="53dp"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Edad"
+                    android:textColor="#198eb6"
+                    android:textSize="22sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelUbicacion" />
+
+                <TextView
+                    android:id="@+id/labelTelefono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="53dp"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Teléfono"
+                    android:textColor="#198eb6"
+                    android:textSize="22sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelEdad" />
+
+                <TextView
+                    android:id="@+id/labelNacionalidad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="53dp"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Nacionalidad"
+                    android:textColor="#198eb6"
+                    android:textSize="22sp"
+                    android:textStyle="normal"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelTelefono" />
+
+                <TextView
+                    android:id="@+id/nacionalidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@id/labelNacionalidad"
+                    tools:text="AU" />
+
+                <TextView
+                    android:id="@+id/telefono"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@id/labelTelefono"
+                    tools:layout_editor_absoluteX="-35dp"
+                    tools:text="0472-492-054" />
+
+                <TextView
+                    android:id="@+id/edad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@id/labelEdad"
+                    tools:text="50" />
+
+                <TextView
+                    android:id="@+id/ubicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="12dp"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintTop_toBottomOf="@id/labelUbicacion"
+                    tools:text="Australia - Northern Territory - Warrnambool" />
+
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="650dp"
+                    android:text="Agendar Cita"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
