@@ -8,11 +8,14 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -23,6 +26,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="29dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
@@ -60,6 +64,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="12dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
@@ -76,6 +81,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="15dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
                     android:textColor="#000000"
@@ -104,6 +110,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
                     android:textColor="#000000"
@@ -120,6 +127,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="28dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
                     android:text="Costo"
@@ -149,6 +157,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="47dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
                     android:text="Ubicación"
@@ -164,6 +173,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="53dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
                     android:text="Edad"
@@ -179,6 +189,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="53dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
                     android:text="Teléfono"
@@ -195,6 +206,7 @@
 
                     android:layout_marginStart="40dp"
                     android:layout_marginTop="53dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
                     android:text="Nacionalidad"
@@ -210,6 +222,7 @@
                     android:layout_height="wrap_content"
 
                     android:layout_marginTop="12dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
@@ -241,6 +254,7 @@
                     android:layout_height="wrap_content"
 
                     android:layout_marginTop="12dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
@@ -256,6 +270,7 @@
                     android:layout_height="wrap_content"
 
                     android:layout_marginTop="12dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
@@ -271,7 +286,9 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="110dp"
                     android:layout_marginTop="650dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:text="Agendar Cita"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

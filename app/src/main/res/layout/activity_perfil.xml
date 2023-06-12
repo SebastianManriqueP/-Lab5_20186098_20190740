@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".perfil">
+
     <TextView
         android:id="@+id/titlePerfilDoctor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="29dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:gravity="center_horizontal"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
@@ -48,11 +50,12 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
         android:layout_marginTop="196dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:gravity="center_horizontal"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
         android:textColor="#000000"
-        android:textSize="20sp"
+        android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -64,6 +67,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="256dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
         android:textColor="#000000"
@@ -89,6 +93,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="312dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
         android:textColor="#000000"
@@ -114,6 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="364dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
         android:textColor="#000000"
@@ -139,6 +145,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="412dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
         android:textColor="#000000"
@@ -157,12 +164,14 @@
         app:layout_constraintBottom_toBottomOf="@id/metodo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/metodo" />
+
     <TextView
         android:id="@+id/configuracion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="464dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
         android:textColor="#000000"
@@ -181,12 +190,14 @@
         app:layout_constraintBottom_toBottomOf="@id/configuracion"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/configuracion" />
+
     <TextView
         android:id="@+id/ayuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="510dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
         android:textColor="#000000"
@@ -205,12 +216,14 @@
         app:layout_constraintBottom_toBottomOf="@id/ayuda"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/ayuda" />
+
     <TextView
         android:id="@+id/cerrarsesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
         android:layout_marginTop="555dp"
+        android:fontFamily="@font/averia_sans_libre_light"
         android:letterSpacing="-0.02"
         android:lineSpacingExtra="0sp"
         android:textColor="#000000"
