@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -11,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lab5_aiot.Model.DoctorDB;
 import com.example.lab5_aiot.R;
+import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
@@ -45,6 +47,14 @@ public class DoctoresAdapter extends RecyclerView.Adapter<DoctoresAdapter.Doctor
     public void onBindViewHolder(@NonNull DoctoresAdapter.DoctorViewHolder holder, int position) {
         DoctorDB doc = listaDoctores.get(position);
         holder.doctorDB = doc;
+        //Cambiar foto
+        /*Cambiar foto*/
+        ImageView imageView = holder.itemView.findViewById(R.id.imageView3);
+        Picasso.with(context)
+                .load(doc.getPicture())
+                .fit()
+                .centerInside()
+                .into(imageView);
         //Cambiar nombre
         TextView textViewNombre = holder.itemView.findViewById(R.id.textNombre);
         textViewNombre.setText("Dr."+doc.getFirst());
