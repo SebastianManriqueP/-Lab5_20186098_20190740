@@ -57,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
             signInLauncher.launch(intent2);
         });
-
         //Boton de Registro
         binding.textRegistro.setOnClickListener(view -> {
             startActivity(intent);

@@ -3,7 +3,7 @@ package com.example.lab5_aiot;
 import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class ver_mas_doctores extends AppCompatActivity {
+public class Ver_mas_doctores extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

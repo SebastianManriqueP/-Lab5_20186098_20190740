@@ -31,7 +31,20 @@
         android:textColorHint="#000000"
         app:layout_constraintEnd_toEndOf="@+id/buttonIngresar"
         app:layout_constraintStart_toStartOf="@+id/buttonIngresar"
-        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonIngresar" >
+
+
+    </Button>
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="100dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@id/buttonGoogle"
+        app:layout_constraintTop_toTopOf="@id/buttonGoogle"
+        app:layout_constraintBottom_toBottomOf="@id/buttonGoogle"
+        android:src="@drawable/google"
+    />
 
     <TextView
         android:id="@+id/textView3"
@@ -76,6 +89,7 @@
         android:layout_marginTop="60dp"
         android:layout_marginEnd="344dp"
         android:fontFamily="@font/averia_sans_libre_light"
+
         android:text="Correo"
         android:textColor="#000000"
         android:textSize="22sp"
@@ -112,7 +126,8 @@
         android:ems="10"
         android:fontFamily="@font/averia_sans_libre_light"
         android:foregroundTint="#000000"
-        android:hint="     Ingrese su correo"
+        android:hint="Ingrese su correo"
+        android:paddingStart="32dp"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="@+id/textView8"
@@ -127,7 +142,8 @@
         android:background="#4c858585"
         android:ems="10"
         android:fontFamily="@font/averia_sans_libre_light"
-        android:hint="     Ingrese su contraseña"
+        android:hint="Ingrese su contraseña"
+        android:paddingStart="32dp"
         android:inputType="textPassword"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -156,7 +172,17 @@
         app:layout_constraintEnd_toEndOf="@+id/buttonGoogle"
         app:layout_constraintStart_toStartOf="@+id/buttonGoogle"
         app:layout_constraintTop_toBottomOf="@+id/buttonGoogle" />
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="100dp"
+        android:layout_marginStart="20dp"
 
+        app:layout_constraintStart_toStartOf="@id/button2"
+        app:layout_constraintTop_toTopOf="@id/button2"
+        app:layout_constraintBottom_toBottomOf="@id/button2"
+        android:src="@drawable/fb_logo"
+        />
     <TextView
         android:id="@+id/textRegistro"
         android:layout_width="wrap_content"
