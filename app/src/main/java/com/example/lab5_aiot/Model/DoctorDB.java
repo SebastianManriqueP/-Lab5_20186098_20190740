@@ -13,6 +13,9 @@ public class DoctorDB implements Serializable {
     private String age;
     private String phone;
     private String picture;
+    private String nat;
+    private String gender;
+    private String login;
 
     public String getTitle() {
         return title;
@@ -92,5 +95,29 @@ public class DoctorDB implements Serializable {
 
     public void setPicture(String picture) {
         this.picture = picture;
+    }
+
+    public String getNat() {
+        return nat;
+    }
+
+    public void setNat(String nat) {
+        this.nat = nat;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public String getLogin() {
+        return login;
+    }
+
+    public void setLogin(String login) {
+        this.login = login;
     }
 }

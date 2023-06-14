@@ -12,6 +12,10 @@ public class Result implements Serializable {
     private Dob dob; //para la edad del doctor
     private Picture picture;
 
+    private String nat;
+    private String gender;
+    private Login login;
+
 
     public Name getName() {
         return name;
@@ -59,5 +63,29 @@ public class Result implements Serializable {
 
     public void setPicture(Picture picture) {
         this.picture = picture;
+    }
+
+    public String getNat() {
+        return nat;
+    }
+
+    public void setNat(String nat) {
+        this.nat = nat;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
+
+    public Login getLogin() {
+        return login;
+    }
+
+    public void setLogin(Login login) {
+        this.login = login;
     }
 }

@@ -20,8 +20,7 @@ public class Perfil extends AppCompatActivity {
         binding = ActivityPerfilBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         binding.regresar.setOnClickListener(view -> {
-            Intent intent = new Intent(this, DoctoresActivity.class);
-            startActivity(intent);
+            this.onBackPressed();
         });
         binding.cerrarsesion.setOnClickListener(view -> {
             AuthUI.getInstance()
@@ -34,6 +33,7 @@ public class Perfil extends AppCompatActivity {
                     });
             Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
+
         });
     }
 }

@@ -56,7 +56,7 @@
                     android:layout_marginTop="50dp"
                     app:layout_constraintStart_toStartOf="@id/regresar"
                     app:layout_constraintTop_toBottomOf="@id/titlePerfilDoctor"
-                    tools:src="@tools:sample/avatars" />
+                    tools:srcCompat="@tools:sample/avatars" />
 
                 <TextView
                     android:id="@+id/nombreDoctor"
@@ -68,12 +68,12 @@
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
+                    android:text="Dr. Monsieur Juarez"
                     android:textColor="#000000"
                     android:textSize="20sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toEndOf="@id/fotoDoctor"
-                    app:layout_constraintTop_toTopOf="@id/fotoDoctor"
-                    tools:text="Dr. Monsieur Juarez" />
+                    app:layout_constraintTop_toTopOf="@id/fotoDoctor" />
 
                 <TextView
                     android:id="@+id/genero"
@@ -84,12 +84,12 @@
                     android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
+                    android:text="Hombre"
                     android:textColor="#000000"
                     android:textSize="17sp"
                     android:textStyle="normal"
                     app:layout_constraintStart_toEndOf="@id/fotoDoctor"
-                    app:layout_constraintTop_toBottomOf="@id/nombreDoctor"
-                    tools:text="Hombre" />
+                    app:layout_constraintTop_toBottomOf="@id/nombreDoctor" />
 
                 <TextView
                     android:id="@+id/correo"
@@ -97,13 +97,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
                     android:layout_marginTop="10dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
+                    android:text="mailto:etienne.nguyen@example.com"
                     android:textColor="#000000"
                     android:textSize="10sp"
                     app:layout_constraintStart_toEndOf="@id/fotoDoctor"
-                    app:layout_constraintTop_toBottomOf="@id/genero"
-                    tools:text="mailto:etienne.nguyen@example.com" />
+                    app:layout_constraintTop_toBottomOf="@id/genero" />
 
                 <TextView
                     android:id="@+id/username"
@@ -113,13 +114,13 @@
                     android:fontFamily="@font/averia_sans_libre_light"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
+                    android:text="angryfish444"
                     android:textColor="#000000"
                     android:textSize="17sp"
                     android:textStyle="normal"
                     app:layout_constraintEnd_toEndOf="@id/fotoDoctor"
                     app:layout_constraintStart_toStartOf="@id/fotoDoctor"
-                    app:layout_constraintTop_toBottomOf="@id/fotoDoctor"
-                    tools:text="angryfish444" />
+                    app:layout_constraintTop_toBottomOf="@id/fotoDoctor" />
 
                 <TextView
                     android:id="@+id/costolabel"
@@ -142,14 +143,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="20.1dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
                     android:gravity="center_horizontal"
+                    android:text="S/ 165.00"
                     android:textColor="#000000"
                     android:textSize="17sp"
                     android:textStyle="normal"
                     app:layout_constraintBottom_toBottomOf="@id/costolabel"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="@id/costolabel"
-                    tools:text="S/ 165.00" />
+                    app:layout_constraintTop_toTopOf="@id/costolabel" />
 
                 <TextView
                     android:id="@+id/labelUbicacion"
@@ -226,11 +228,11 @@
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
+                    android:text="AU"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="normal"
-                    app:layout_constraintTop_toBottomOf="@id/labelNacionalidad"
-                    tools:text="AU" />
+                    app:layout_constraintTop_toBottomOf="@id/labelNacionalidad" />
 
                 <TextView
                     android:id="@+id/telefono"
@@ -241,12 +243,12 @@
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
+                    android:text="0472-492-054"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="normal"
                     app:layout_constraintTop_toBottomOf="@id/labelTelefono"
-                    tools:layout_editor_absoluteX="-35dp"
-                    tools:text="0472-492-054" />
+                    tools:layout_editor_absoluteX="-35dp" />
 
                 <TextView
                     android:id="@+id/edad"
@@ -258,27 +260,14 @@
                     android:gravity="center_horizontal"
                     android:letterSpacing="-0.02"
                     android:lineSpacingExtra="0sp"
+                    android:text="50"
                     android:textColor="#000000"
                     android:textSize="15sp"
                     android:textStyle="normal"
-                    app:layout_constraintTop_toBottomOf="@id/labelEdad"
-                    tools:text="50" />
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelEdad" />
 
-                <TextView
-                    android:id="@+id/ubicacion"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-
-                    android:layout_marginTop="12dp"
-                    android:fontFamily="@font/averia_sans_libre_light"
-                    android:gravity="center_horizontal"
-                    android:letterSpacing="-0.02"
-                    android:lineSpacingExtra="0sp"
-                    android:textColor="#000000"
-                    android:textSize="15sp"
-                    android:textStyle="normal"
-                    app:layout_constraintTop_toBottomOf="@id/labelUbicacion"
-                    tools:text="Australia - Northern Territory - Warrnambool" />
 
                 <Button
                     android:id="@+id/button3"
@@ -291,6 +280,23 @@
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/ubicacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/averia_sans_libre_light"
+                    android:gravity="center_horizontal"
+                    android:letterSpacing="-0.02"
+                    android:lineSpacingExtra="0sp"
+                    android:text="Australia - Northern Territory - Warrnambool"
+                    android:textColor="#000000"
+                    android:textSize="15sp"
+                    android:textStyle="normal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/labelUbicacion" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

@@ -1,9 +1,11 @@
 package com.example.lab5_aiot.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.lab5_aiot.Model.DoctorDB;
+import com.example.lab5_aiot.Perfil_doctor;
 import com.example.lab5_aiot.R;
 import com.squareup.picasso.Picasso;
 
@@ -110,6 +113,34 @@ public class DoctoresAdapter extends RecyclerView.Adapter<DoctoresAdapter.Doctor
 
         public DoctorViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            Button botonInfo = itemView.findViewById(R.id.buttonInfo);
+            botonInfo.setOnClickListener(view -> {
+                Context context = view.getContext();
+                Intent intent = new Intent(context, Perfil_doctor.class);
+                intent.putExtra("DoctorNombre", doctorDB.getFirst());
+                intent.putExtra("DoctorEmail", doctorDB.getEmail());
+                intent.putExtra("DoctorApellido", doctorDB.getLast());
+                intent.putExtra("DoctorEdad", doctorDB.getAge());
+                intent.putExtra("DoctorUbicacion", doctorDB.getCountry()+" - "+doctorDB.getState()+" - "+doctorDB.getCity());
+                intent.putExtra("DoctorTelefono", doctorDB.getPhone());
+                intent.putExtra("DoctorFoto", doctorDB.getPicture());
+                intent.putExtra("DoctorUser", doctorDB.getLogin());
+                intent.putExtra("DoctorNacion", doctorDB.getNat());
+                //costo
+                int costo = Integer.parseInt(doctorDB.getAge())*5;
+                intent.putExtra("DoctorCosto", costo+"");
+                //genero
+                String genero = "";
+                if(doctorDB.getGender().equals("female")){
+                    genero = "Mujer";
+                }else{
+                    genero = "Hombre";
+                }
+                intent.putExtra("DoctorGenero", genero);
+                //////
+                context.startActivity(intent);
+            });
         }
     }
 }

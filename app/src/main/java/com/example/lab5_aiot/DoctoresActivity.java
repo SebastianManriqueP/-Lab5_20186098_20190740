@@ -99,6 +99,9 @@ public class DoctoresActivity extends AppCompatActivity implements SearchView.On
                     doctorDB.setAge(doctor.getResult().get(0).getDob().getAge());
                     doctorDB.setPhone(doctor.getResult().get(0).getPhone());
                     doctorDB.setPicture(doctor.getResult().get(0).getPicture().getLarge());
+                    doctorDB.setNat(doctor.getResult().get(0).getNat());
+                    doctorDB.setLogin(doctor.getResult().get(0).getLogin().getUsername());
+                    doctorDB.setGender(doctor.getResult().get(0).getGender());
                     //
                     db.child("doctores").push().setValue(doctorDB);
                     crearToast("Se ha agregado a Dr. "+ doctor.getResult().get(0).getName().getFirst());
