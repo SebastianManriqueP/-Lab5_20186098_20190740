@@ -32,6 +32,7 @@ public class Perfil extends AppCompatActivity {
                         }
                     });
             Intent intent = new Intent(this, MainActivity.class);
+            finish();
             startActivity(intent);
 
         });

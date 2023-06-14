@@ -21,5 +21,8 @@ public class Ver_mas_doctores extends AppCompatActivity {
             String nombre = parametros.getString("DoctorNombre");
             binding.nombreDoctor.setText("Se agendo su cita con el Dr. "+nombre);
         }
+        binding.button3.setOnClickListener(view -> {
+            this.onBackPressed();
+        });
     }
 }

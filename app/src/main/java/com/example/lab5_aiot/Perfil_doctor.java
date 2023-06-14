@@ -63,6 +63,7 @@ public class Perfil_doctor extends AppCompatActivity {
             Context context = view.getContext();
             Intent intent = new Intent(context, Ver_mas_doctores.class);
             intent.putExtra("DoctorNombre", finalNombreDoctor);
+            finish();
             startActivity(intent);
         });
     }

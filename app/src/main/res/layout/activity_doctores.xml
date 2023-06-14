@@ -24,7 +24,7 @@
         android:layout_marginStart="14dp"
         android:layout_marginTop="36dp"
         android:fontFamily="@font/averia_sans_libre_light"
-        android:text="Nombre"
+        android:text="Rodrigo"
         android:textColor="#000000"
         android:textSize="22sp"
         app:layout_constraintStart_toEndOf="@+id/perfil"
